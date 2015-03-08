@@ -32,13 +32,20 @@ au FileType cs set omnifunc=syntaxcomplete#Complete
 set wildmode=longest,list,full
 set wildmenu
 
+" Match braces
 inoremap { {<CR>}<Esc>ko
 
+" Prev/next buffer
 map <leader>n :bp<CR>
 map <leader>N :bn<CR>
+" Delete buffer
 map <leader>w :bd<CR>
+" Show buffers
 map <leader>l :ls<CR>
 
+nmap <leader><leader> :nohlsearch<CR>
+
+" Ctrl-direction -> move in insert mode
 imap <C-h> <Esc>hli
 imap <C-j> <Esc>jli
 imap <C-k> <Esc>kli

@@ -33,7 +33,6 @@ set wildmode=longest,list,full
 set wildmenu
 
 inoremap { {<CR>}<Esc>ko
-nmap <C-o> :CtrlP .<CR>
 
 map <leader>n :bp<CR>
 map <leader>N :bn<CR>
@@ -44,6 +43,8 @@ imap <C-h> <Esc>hli
 imap <C-j> <Esc>jli
 imap <C-k> <Esc>kli
 imap <C-l> <Esc>lli
+
+let g:ctrlp_working_path_mode=''
 
 execute pathogen#infect()
 

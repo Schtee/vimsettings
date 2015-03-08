@@ -45,5 +45,7 @@ imap <C-j> <Esc>jli
 imap <C-k> <Esc>kli
 imap <C-l> <Esc>lli
 
+execute pathogen#infect()
+
 colorscheme desert
 highlight ColorColumn guibg=Gray14 ctermbg=DarkGray

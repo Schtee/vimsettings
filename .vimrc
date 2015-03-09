@@ -59,6 +59,8 @@ imap <C-j> <Esc>jli
 imap <C-k> <Esc>kli
 imap <C-l> <Esc>lli
 
+au FocusLost * :wa
+
 let g:ctrlp_working_path_mode=''
 
 execute pathogen#infect()

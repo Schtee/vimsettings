@@ -23,5 +23,3 @@ elif sys.platform.startswith('win'):
 	kdll = ctypes.windll.LoadLibrary('kernel32.dll')
 	kdll.CreateSymbolicLinkA(vimrcLinkPath, vimrcTargetPath, 0)
 	kdll.CreateSymbolicLinkA(vimFilesLinkPath, vimFilesTargetPath, 1)
-
-urllib.urlretrieve('https://tpo.pe/pathogen.vim', '.vim/autoload/pathogen.vim')

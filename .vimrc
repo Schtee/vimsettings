@@ -32,6 +32,10 @@ au FileType cs set omnifunc=syntaxcomplete#Complete
 set wildmode=longest,list,full
 set wildmenu
 
+" use wrapped line navigation
+nmap j gj
+nmap k gk
+
 " Match braces
 inoremap { {<CR>}<Esc>ko
 
@@ -44,6 +48,10 @@ map <leader>w :bd<CR>
 map <leader>l :ls<CR>
 
 nmap <leader><leader> :nohlsearch<CR>
+
+" Save
+map <C-s> :w<CR>
+imap <C-s> <Esc><C-s>a
 
 " Ctrl-direction -> move in insert mode
 imap <C-h> <Esc>hli

@@ -40,8 +40,8 @@ nmap k gk
 inoremap { {<CR>}<Esc>ko
 
 " Prev/next buffer
-map <leader>n :bp<CR>
-map <leader>N :bn<CR>
+map <leader>n :bn<CR>
+map <leader>N :bp<CR>
 " Delete buffer
 map <leader>w :bd<CR>
 " Show buffers

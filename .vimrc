@@ -12,6 +12,8 @@ endif
 
 set relativenumber
 
+set ruler
+
 set hlsearch
 set incsearch
 set tabstop=3

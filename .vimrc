@@ -32,6 +32,8 @@ au FileType cs set omnifunc=syntaxcomplete#Complete
 set wildmode=longest,list,full
 set wildmenu
 
+set backspace=indent,eol,start
+
 " use wrapped line navigation
 nmap j gj
 nmap k gk

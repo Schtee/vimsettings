@@ -6,6 +6,8 @@ endif
 
 if has("win32") || has("win16")
 	set guifont=Consolas:h14
+elseif has("mac")
+	set guifont=Menlo\ Regular:h14
 else
 	set guifont=Monospace
 endif

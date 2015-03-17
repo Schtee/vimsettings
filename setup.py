@@ -6,7 +6,7 @@ import urllib
 platform = sys.platform
 
 def symLink(linkTargetPath, linkPath, isDirectory):
-	if platform.startswith('linux'):
+	if platform.startswith('linux') or platform.startswith('darwin'):
 		os.symlink(linkTargetPath, linkPath)
 	elif platform.startswith('win'):
 		kdll = ctypes.windll.LoadLibrary('kernel32.dll')
